@@ -25,7 +25,7 @@ jobs:
 
       - name: Build release
         run: ./build.py -vr all
-
+        
       - name: Build debug
         run: ./build.py -v all
 
@@ -46,7 +46,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        api: [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+        api: [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
     steps:
       - name: Check out
